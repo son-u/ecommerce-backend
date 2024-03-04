@@ -21,4 +21,4 @@ export const TryCatch =
   (func: CotrollerType) =>
   (req: Request, res: Response, next: NextFunction) => {
     return Promise.resolve(func(req, res, next)).catch(next);
-  };
+};
